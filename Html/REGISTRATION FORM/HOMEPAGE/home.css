@@ -1,0 +1,571 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: #000;
+}
+
+p {
+    color: #000;
+}
+
+
+
+
+/* HEADER */
+
+header {
+    background-image: url('header.jpg');
+    background-repeat: no-repeat;  
+    background-size: cover;
+    padding: 10px;
+    overflow: hidden;
+}
+
+.info {
+    margin-left: 35px;
+    display: block;
+    float: left;
+    padding-top: 20px;
+}
+
+img.logo {
+  height: auto;
+  display: block;
+  float: left;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+
+
+
+/* Navigation Bar */
+
+.nav {
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+#navbar {
+  background-color: #333;
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+  overflow: hidden;
+
+}
+
+.progress-container {
+  width: 100%;
+  height: 5px;
+  background: #ccc;
+}
+
+.progress-bar {
+  height: 5px;
+  background: #04AA6D;
+  width: 0%;
+}
+
+.tablinks {
+  float: left;
+  display: block;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  font-size: 17px;
+  width: 20%;
+}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #000000;
+  
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab .icon {
+    display: none;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #161616;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #161616;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+}
+
+
+* {box-sizing: border-box;}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: white;
+}
+
+
+@media screen and (max-width: 600px) {
+    .tab button:not(:first-child) {display: none;}
+    .tab button.icon {
+      float: right;
+      display: block;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .tab.responsive {position: relative;}
+    .tab.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .tab.responsive button {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
+
+.split {
+  float: left;
+  color: white;
+  float: left;
+  display: block;
+}
+
+.openBtn {
+  background: #f1f1f1;
+  border: none;
+  padding: 10px 15px;
+  font-size: 20px;
+  cursor: pointer;
+  float: right;
+  display: block;
+}
+
+.openBtn:hover {
+  background: #bbb;
+}
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  display: none;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+}
+
+.overlay-content {
+  position: relative;
+  top: 46%;
+  width: 80%;
+  text-align: center;
+  margin-top: 30px;
+  margin: auto;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+  cursor: pointer;
+  color: white;
+}
+
+.overlay .closebtn:hover {
+  color: #ccc;
+}
+
+.overlay input[type=text] {
+  padding: 15px;
+  font-size: 17px;
+  border: none;
+  float: left;
+  width: 80%;
+  background: white;
+}
+
+.overlay input[type=text]:hover {
+  background: #f1f1f1;
+}
+
+.overlay button {
+  float: left;
+  width: 20%;
+  padding: 15px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.overlay button:hover {
+  background: #bbb;
+}
+
+
+/* --CHANGE THEME-- */
+.switch {
+  position: relative;
+  width: 55px;
+  height: 29px;
+  float: right;
+  display: block;
+  margin: 10px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #202020;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #202020;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 28px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+label {
+    padding: 8px;
+    display: block;
+    margin-left: 5px;
+}
+
+.darkmode {
+    background-color: #333;
+    color: white;
+}
+
+.darkmode .tabcontent {
+    background-color: #333;
+    color: white;
+}
+
+.darkmode .right {
+  background-color: #414141;
+  color: white;
+  border: 1px solid #414141;
+  border-bottom: 1px solid #dddddd;
+}
+
+.darkmode i {
+  color: #04AA6D;
+}
+
+.darkmode fieldset {
+  background-color: #414141;
+}
+
+.darkmode .h3 {
+  color: #04AA6D;
+}
+
+.darkmode td {
+  color: #fff;
+}
+
+.darkmode tr {
+  border: 1px solid #333;
+}
+
+.darkmode tr:nth-child(even) {
+  background-color: #444;
+}
+
+.darkmode tr, td {
+  border: 2px solid #333;
+  color: #fff;
+}
+
+.darkmode .minor-fees-display {
+  border: 4px solid #000;
+}
+
+.darkmode .p {
+  color: #000; 
+  text-decoration: bold;
+  text-decoration: italic;
+}
+
+.darkmode section {
+  background-color: #000;
+  color: #fff;
+}
+
+
+
+/* */
+
+ol {
+    color: #333;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+fieldset {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: auto;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    align-items: center;
+    width: 90%;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    background-color: #cccccc4b;
+}
+
+legend {
+    width: 100%; 
+    color: #000;
+    padding-left: 15px;
+    padding-bottom: 0;
+    border-radius: 6px;
+}
+
+i {
+  font-weight: bold;
+  font-size: 18px;
+  padding-left: 5px;
+}
+
+p {
+  color: #003609c5;
+  font-size: 17px;
+}
+
+.left {
+  padding-bottom: 3px;
+}
+
+.right {
+  background-color: #fff;
+  color: black;
+  border: 1px solid #fff;
+  border-bottom: 1px solid #333;
+}
+
+.edit-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+  
+}
+
+.edit-button:hover {
+    background-color: #4CAF50;
+    color: #000;
+}
+.register-button {
+    background-color: #ffdb4d;
+    color: #000;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+.register-button:hover {
+    background-color: #ffd21f;
+    color: #000;
+}
+
+.sched {
+    float: left;
+    width: 90%;
+    padding: 20px;
+    margin-left: 35px;
+}
+
+/* --FEES-- */
+
+.main-content {
+  display: block;
+  margin-left: auto; 
+  margin-right: auto;
+  width: 80%;
+}
+
+.container {
+  display: block;
+  flex-direction: row;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+}
+
+
+.hidden {
+  display: none;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #fff;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+td {
+  text-align: left;
+  padding-left: 35px;
+  color: #333;
+}
+
+
+
+
+
+
+/* --ACCOUNT-- */
+input {
+  border: none;
+  border-bottom: 2px solid #76944c;
+  border-radius: 5px;
+  padding: 3px;
+  width: 40%;
+}
+
+.acc {
+  margin-left: 2%;
+  float: left;
+  display: block;
+  width: 70%;
+}
+
+section {
+  width: 100%;
+  display: block;
+  float: left;
+  padding-left: 2%;
+  padding-right: 2%;
+  padding-bottom: 10px;
+  background-color: #333;
+  margin-top: 30px;
+}
+.editable {
+  color: #555;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+  width: 55%;
+}
+
+.editable[contentEditable="true"] {
+  background-color: #e1f7d5; /* Light green for editable state */
+}
+
+button:hover {
+  background-color: #4CAF50;
+  color: #000;
+}
+button {
+  background-color: #ffdb4d;
+  color: #000;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+}

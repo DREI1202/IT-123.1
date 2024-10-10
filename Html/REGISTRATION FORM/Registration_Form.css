@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url('BSUbg2.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    max-width: 2000px;
+    margin: 0 auto;
+    font-size: 15px;
+    font-weight: bold;
+}
+.container {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+aside.sidebar {
+    width: 250px;
+    height: 100vh;
+    background-color:#76944c;
+    border-right: 1px solid #4CAF50;
+    border-left: 15px solid #56752a;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+aside.sidebar h2 {
+    font-size: 25px;
+    font-weight: bold;
+    color: #000;
+    margin: 0;
+    padding-bottom: 20px;
+}
+
+aside.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+aside.sidebar li {
+    margin: 10px 0;
+}
+
+aside.sidebar a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+}
+
+aside.sidebar i {
+    margin-right: 10px;
+}
+
+main.main-content {
+    margin-left: 200px; 
+    padding: 10px;
+    width: calc(100% - 200px);
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+}
+
+.sidebar {
+    width: 40%; 
+    padding: 20px; 
+}
+
+.sidebar ol {
+    padding-left: 20px;
+    margin: 0;
+}
+
+.sidebar ol li {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+.sidebar ul li {
+    margin-bottom: 5px;
+    font-size: 1em;
+    color: #1d1d1d; 
+}
+
+.bg-selected {
+    background-color:#56752a; 
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.hidden {
+    display: none;
+}
+
+form {
+    display: block;
+    margin-left: 75px;
+    margin-right: auto;
+    width: 55%;
+}
+
+fieldset {
+    border: 1px solid #76944c;
+    border-left: 10px solid #56752a;
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%;
+    margin: 20px auto;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #c8daa6;
+}
+
+input:active {
+    border: none;
+}
+
+legend {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    width: 100%; 
+    color: #000;
+}
+
+.left {
+    float: left;
+    width: 42%;
+}
+
+.right {
+    float: left;
+    width: 58%;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+  
+.form-group label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+  
+input, select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+input {
+    border: none;
+    border-bottom: 2px solid #76944c;
+    width: 58%;
+}
+  
+input, select, button {
+    border-radius: 5px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: none;
+    font-size: 16px;
+}
+button:hover {
+    background-color: #ffdb4d;
+    color: #000;
+}
+.college-section {
+    margin-bottom: 30px;
+}
+

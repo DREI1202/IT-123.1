@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+
+
+    <div class="popup" id="popup">
+        <div class="popup-content">
+            <button class="close-button" id="closePopup">✖</button>
+            <img id="galleryImage" src="1.png" alt="Gallery Image">
+            <div class="caption" id="imageCaption">Caption for image 1</div>
+            <div class="button-container">
+                <button id="prevButton">Previous</button>
+                <button id="nextButton">Next</button>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="sidebar">
+        <h2 style="color: #04AA6D">Enrollment Steps</h2>
+        <ol>
+            <li id="select-college-step">Select your College</li> 
+            <li id="select-degree-step">Select your Program/Degree</li> 
+            <li id="registration-form-step">Fill in the Registration Form </li>
+            <ul>
+                <li id="personal-info-step">Personal Information</li>
+                <li id="previous-school-step">Previous School Information</li>
+                <li id="contact-info-step">Contact Information</li>
+                <li id="emergency-contact-step">Person To Be Contacted In Case Of Emergency</li>
+            </ul>
+            <li id="review-schedule-step">Review/Change School Schedule</li>
+            <li id="review-fee-step">Review/Change Assessment Fee</li>
+        </ol>
+    </div>
+
+    <div class="main">
+        <div class="container-form">
+        <h1>College & Degree Program</h1>
+        <main class="main-content">   
+            <form>
+            <fieldset class="programs">
+                <legend></legend> <br>
+                <div class="box">
+                  <select name="colleges" id="colleges" class="box">
+                      <option disabled selected value> --Select College-- </option>
+                      <option id="Agriculture" value="CA">College of Agriculture</option>
+                      <option id="Teacher Education" value="CTE">College of Teacher Education</option>
+                      <option id="Engineering" value="CE">College of Engineering</option>
+                      <option id="Home Economics & Technology" value="CHET">College of Home Economics & Technology</option>
+                      <option id="Forestry" value="CF">College of Forestry</option>
+                      <option id="Nursing" value="CN">College of Nursing</option>
+                      <option id="Veterinary Medicine" value="CVM">College of Veterinary Medicine</option>
+                      <option id="Human Kinetics" value="CHK">College of Human Kinetics</option>
+                      <option id="Public Administration & Governance" value="CPAG">College of Public Administration & Governance</option>
+                      <option id="Information Sciences" value="CIS">College of Information Sciences</option>
+                      <option id="Arts & Humanities" value="CAH">College of Arts & Humanities</option>
+                      <option id="Social Sciences" value="CSS">College of Social Sciences</option>
+                      <option id="Numeracy & Applied Sciences" value="CNAS">College of Numeracy & Applied Sciences</option>
+                      <option id="Natural Sciences" value="CNS">College of Natural Sciences</option>
+                  </select> <br>
+                </div>
+        
+                <div id="CAProg" class="degree-dropdown hidden">
+                <label for="programs"><b>PROGRAMS:</b></label> <br><br>
+                <select name="programs" id="CAP">
+                    <option disabled selected value> --Select Program Degree-- </option>
+                    <option id="" value="Deg">Bachelor of Science in Agriculture</option>
+                    <option id="" value="Deg">Bachelor of Science in Agribusiness</option>
+                </select>
+                </div>
+        
+                <div id="CTEProg" class="degree-dropdown hidden">
+                <label for="programs"><b>PROGRAMS:</b></label> <br><br>
+                <select name="programs" id="CTEP">
+                    <option disabled selected value> --Select Program Degree-- </option>a
+                    <option id="" value="Deg">Bachelor of Early Childhood Education</option>
+                    <option id="" value="Deg">Bachelor of Elementary Education</option>
+                    <option id="" value="Deg">Bachelor of Secondary Education Major in Biological Science</option>
+                    <option id="" value="Deg">Bachelor of Secondary Education Major in English</option>
+                    <option id="" value="Deg">Bachelor of Secondary Education Major in Filipino</option>
+                    <option id="" value="Deg">Bachelor of Secondary Education Major in Values Education</option>
+                    <option id="" value="Deg">Bachelor of Secondary Education Major in Social Studies</option>
+                    <option id="" value="Deg">Bachelor of Secondary Education Major in Mathematics</option>
+                    <option id="" value="Deg">Bachelor of Secondary Education Major in Physical Science</option>
+                    <option id="" value="Deg">Bachelor of Secondary Education Major in Physical Education, Health, Music and Arts</option>
+                    <option id="" value="Deg">Bachelor of Technology and Livelihood Education</option>
+                </select>
+                </div>
+        
+                <div id="CEProg" class="degree-dropdown hidden">
+                <label for="programs"><b>PROGRAMS:</b></label> <br><br>
+                <select name="programs" id="CEP">
+                    <option disabled selected value> --Select Program Degree-- </option>
+                    <option id="" value="Deg">Bachelor of Science in Agricultural and Biosystems Engineering</option>
+                    <option id="" value="Deg">Bachelor of Science in Civil Engineering</option>
+                    <option id="" value="Deg">Bachelor of Science in Electrical Engineering</option>
+                    <option id="" value="Deg">Bachelor of Science in Industrial Engineering</option>
+                </select>
+                </div>
+        
+                <div id="CHETProg" class="degree-dropdown hidden">
+                <label for="programs"><b>PROGRAMS:</b></label> <br><br>
+                <select name="programs" id="CHETP">
+                    <option disabled selected value> --Select Program Degree-- </option>
+                    <option id="" value="Deg">Bachelor of Science in Hospitality Management</option>
+                    <option id="" value="Deg">Bachelor of Science in Nutrition and Dietetics</option>
+                    <option id="" value="Deg">Bachelor of Science in Entrepreneurship specialized in Apparel & Fashion Enterprise</option>
+                    <option id="" value="Deg">Bachelor of Science in Entrepreneurship specialized in Food Enterprise</option>
+                    <option id="" value="Deg">Bachelor of Science in Food Technology</option>
+                    <option id="" value="Deg">Bachelor of Science in Tourism Management</option>
+                </select>
+                </div>
+        
+                <div id="CFProg" class="degree-dropdown hidden">
+                <label for="programs"><b>PROGRAMS:</b></label> <br><br>
+                <select name="programs" id="CFP">
+                    <option disabled selected value> --Select Program Degree-- </option>
+                    <option id="" value="Deg">Bachelor of Science in Forestry</option>
+                </select>
+                </div>
+        
+                <div id="CNProg" class="degree-dropdown hidden">
+                <label for="programs"><b>PROGRAMS:</b></label> <br><br>
+                <select name="programs" id="CNP">
+                    <option disabled selected value> --Select Program Degree-- </option>
+                    <option id="" value="Deg">Bachelor of Science in Nursing </option>
+                </select>
+                </div>
+        
+                <div id="CVMProg" class="degree-dropdown hidden">
+                <label for="programs"><b>PROGRAMS:</b></label> <br><br>
+                <select name="programs" id="CVMP">
+                    <option disabled selected value> --Select Program Degree-- </option>
+                    <option id="" value="Deg">Doctor of Veterinary Medicine </option>
+                </select>
+                </div>
+        
+                <div id="CHKProg" class="degree-dropdown hidden">
+                <label for="programs"><b>PROGRAMS:</b></label> <br><br>
+                <select name="programs" id="CHKP">
+                    <option disabled selected value> --Select Program Degree-- </option>
+                    <option id="" value="Deg">Bachelor of Science in Exercise and Sports Sciences </option>
+                    <option id="" value="Deg">Bachelor in Physical Education </option>
+                </select>
+                </div>
+            
+                <div id="CPAGProg" class="degree-dropdown hidden">
+                <label for="programs"><b>PROGRAMS:</b></label> <br><br>
+                <select name="programs" id="CPAGP">
+                    <option disabled selected value> --Select Program Degree-- </option>
+                    <option id="" value="Deg">Bachelor in Public Administration </option>
+                </select>
+                </div>
+            
+                <div id="CISProg" class="degree-dropdown hidden">
+                <label for="programs"><b>PROGRAMS:</b></label> <br><br>
+                <select name="programs" id="CISP">
+                    <option disabled selected value> --Select Program Degree-- </option>
+                    <option value="Deg">Bachelor of Science in Information Technology</option>
+                    <option value="Deg">Bachelor of Library and Information Science</option>
+                    <option value="Deg">Bachelor of Science in Development Communication</option>
+                </select>
+                </div>
+        
+                <div id="CAHProg" class="degree-dropdown hidden">
+                <label for="programs"><b>PROGRAMS:</b></label> <br><br>
+                <select name="programs" id="CAHP">
+                    <option disabled selected value> --Select Program Degree-- </option>
+                    <option id="" value="Deg">Bachelor of Arts in Communication </option>
+                    <option id="" value="Deg">Bachelor of Arts in English Language </option>
+                <option id="" value="Deg">Bachelor of Arts in Filipino Language </option>
+                </select>
+                </div>
+            
+                <div id="CSSProg" class="degree-dropdown hidden">
+                <label for="programs"><b>PROGRAMS:</b></label> <br><br>
+                <select name="programs" id="CSSP">
+                    <option disabled selected value> --Select Program Degree-- </option>
+                    <option id="" value="Deg">Bachelor of Arts in Psychology </option>
+                    <option id="" value="Deg">Bachelor of Arts in History </option>
+                </select>
+                </div>
+            
+                <div id="CNASProg" class="degree-dropdown hidden">
+                <label for="programs"><b>PROGRAMS:</b></label> <br><br>
+                <select name="programs" id="CNASP">
+                    <option disabled selected value> --Select Program Degree-- </option>
+                    <option id="" value="Deg">Bachelor of Science in Statistics </option>
+                    <option id="" value="Deg">Bachelor of Science in Mathematics </option>
+                </select>
+                </div>
+            
+                <div id="CNSProg" class="degree-dropdown hidden">
+                <label for="programs"><b>PROGRAMS:</b></label> <br><br>
+                    <select name="programs" id="CNSP">
+                        <option disabled selected value> --Select Program Degree-- </option>
+                        <option id="" value="Deg">Bachelor of Science in Biology </option>
+                        <option id="" value="Deg">Bachelor of Science in Chemistry </option>
+                        <option id="" value="Deg">Bachelor of Science in Environmental Science </option>
+                    </select>
+                </div>
+            </div>
+            </fieldset><br>
+        
+
+            <!-- FORM -->
+<!-- FORM -->
+<div class="container-form">
+    <div id="PRF" class="degree-dropdown hidden">
+        <h1>Registration Form</h1>
+        <fieldset>
+            <legend></legend>
+
+            <div class="box">
+                <div id="personal-info" class="form-section">
+                    <p style="font-size: 17px; color: #003609c5; width: 100%; padding-top: 15px;">
+                        <i>PERSONAL INFORMATION</i>
+                    </p>
+                    <form action="/action_page.php">
+                        <hr>
+                        <div class="row">
+                            <div class="col-25">
+                                <label for="fname">First Name</label>
+                            </div>
+                            <div class="col-75">
+                                <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-25">
+                                <label for="mname">Middle Name</label>
+                            </div>
+                            <div class="col-75">
+                                <input type="text" id="mname" name="middlename" placeholder="Your middle name..">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-25">
+                                <label for="lname">Last Name</label>
+                            </div>
+                            <div class="col-75">
+                                <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-25">
+                                <label for="maidenname">MAIDEN NAME: (If married)</label>
+                            </div>
+                            <div class="col-75">
+                                <input type="text" id="maidenname" name="maidenname" placeholder="Your maiden name..">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-25">
+                                <label for="datebirth">DATE OF BIRTH:</label>
+                            </div>
+                            <div class="col-75">
+                                <input type="date" id="datebirth" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-25">
+                                <label for="placebirth">PLACE OF BIRTH:</label>
+                            </div>
+                            <div class="col-75">
+                                <input type="text" id="placebirth" placeholder="Your place of birth.." required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-25">
+                                <label for="citizen">CITIZENSHIP:</label>
+                            </div>
+                            <div class="col-75">
+                                <input type="text" id="citizen" placeholder="Your citizenship.." required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-25">
+                                <label for="sex">SEX AT BIRTH:</label>
+                            </div>
+                            <div class="col-75">
+                                <label><input type="radio" name="sex" value="Female" required> Female</label>
+                                <label><input type="radio" name="sex" value="Male"> Male</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-25">
+                                <label for="ethnicity">ETHNICITY:</label>
+                            </div>
+                            <div class="col-75">
+                                <input type="text" id="ethnicity" placeholder="Your ethnicity..">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-25">
+                                <label for="need">SPECIAL NEED/S:</label>
+                            </div>
+                            <div class="col-75">
+                                <input type="text" id="need">
+                            </div>
+                        </div>
+                        <button type="button" onclick="showPreviousSchoolInfo()">Next</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Previous School Information Section -->
+            <div id="previous-school-info" class="form-section hidden">
+                <hr>
+                <p style="font-size: 17px; color: #003609c5; width: 100%; padding-top: 15px;">
+                    <i>PREVIOUS SCHOOL INFORMATION</i>
+                </p>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="idnum">STUDENT ID NUMBER:</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="number" id="idnum" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="lrn">LRN:</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="number" id="lrn" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="acadclass">ACADEMIC CLASSIFICATION:</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="acadclass" required>
+                        <datalist id="acadclass-options">
+                            <option value="SHS graduate">
+                            <option value="HS graduate">
+                            <option value="ALS completer">
+                        </datalist>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="lastsch">LAST SCHOOL ATTENDED:</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="lastsch" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="addlastsch">ADDRESS OF LAST SCHOOL ATTENDED:</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="addlastsch" required>
+                    </div>
+                </div>
+                <button type="button" onclick="prePersonalInfo()">Previous</button>
+                <button type="button" onclick="showContactInfo()">Next</button>
+            </div>
+
+            <!-- Contact Information Section -->
+            <div id="contact-info" class="form-section hidden">
+                <p style="font-size: 17px; color: #003609c5; padding-top: 15px;">
+                    <i>CONTACT INFORMATION</i>
+                </p>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="connum">CONTACT NUMBER:</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="number" id="connum" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="email">EMAIL ADDRESS:</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="email" id="email" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="peradd">PERMANENT ADDRESS:</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="peradd" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="tempadd">ADDRESS WHILE STUDYING AT BSU:</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="tempadd" required>
+                    </div>
+                </div>
+                <button type="button" onclick="prePreviousSchoolInfo()">Previous</button>
+                <button type="button" onclick="showEmergencyInfo()">Next</button>
+            </div>
+
+            <div id="emergency-info" class="form-section hidden">
+                    <p style="font-size: 17px; color: #003609c5; width: 100%; padding-top: 15px;">
+                        <i>PERSON TO BE CONTACTED IN CASE OF EMERGENCY</i></p>
+                        <div class="row">
+                            <div class="col-25">
+                                <label for="emname">COMPLETE NAME:</label>
+                            </div>
+                            <div class="col-75">
+                                <input type="text" id="emname">
+                            </div>
+                        </div>
+                        
+                        <div class="row">
+                            <div class="col-25">
+                                <label for="con_num">CONTACT NUMBER:</label>
+                            </div>
+                            <div class="col-75">
+                                <input type="number" id="con_num">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-25">
+                                <label for="emadd">ADDRESS:</label>
+                            </div>
+                            <div class="col-75">
+                                <input type="text" id="emadd">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-25">
+                                <label for="rel" class="left">RELATIONSHIP: </label>
+                            </div>
+                            <div class="col-75">
+                                <input type="text" id="rel" class="right" required><br>
+                            </div>
+                        </div>
+                            <button type="button" onclick="preContactInfo()">Previous</button>
+                            <button type="submit" onclick="nextPage()">Finish</button>
+                        </form>
+                    </div>   
+                </fieldset>       
+            </div>
+
+    </div>
+    <script type="text/javascript" src="form.js"></script>
+</body>
+</html>

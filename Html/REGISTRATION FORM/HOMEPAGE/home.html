@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>HomePage</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="home.css">
+    <style>
+        .right {
+            border: 1px solid #ccc;
+            padding: 8px;
+            margin-left: 10px;
+            background-color: #f9f9f9;
+        }
+        .form-section.hidden {
+            display: none;
+        }
+        button.edit-button {
+            display: block;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <img src="bsu_logo.png" class="logo" alt="Logo" style="width: 9%;">
+            <div class="info">
+                <div class="intro">Welcome, (First Name)</div> 
+                <div class="id">ID No: 1234567</div> 
+                <div class="name">Name: xxxx x xxxx (BSA 1A)</div>
+                <div class="status">Status: New, Regular</div>
+            </div>
+        </div>
+    </header>
+
+    <div class="sticky">
+      <div class="tab" id="myTopnav">
+          <button class="tablinks" onclick="menuBar(event, 'personal-info')">Personal Information</button>
+          <button class="tablinks" onclick="menuBar(event, 'Sched')">Class Schedule</button>
+          <button class="tablinks" onclick="menuBar(event, 'AoF')">Assessment of Fees</button>
+          <button class="tablinks" onclick="menuBar(event, 'Account')">Account</button>
+            
+          
+              <div class="search-container">
+            <!-- CHANGE THEME -->
+              <form action="/action_page.php">
+                <label class="switch">
+                  <input type="checkbox" id="darkmode-checkbox">
+                  <span class="slider round"></span>
+                </label>
+
+              <!-- SEARCH BAR -->
+                <div id="myOverlay" class="overlay">
+                  <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+                  <div class="overlay-content">
+                    <form action="/action_page.php">
+                      <input type="text" placeholder="Search.." name="search">
+                      <button type="submit" class="submit" style="background-color: #666;"><i class="fa fa-search" style="color: #000;"></i></button>
+                    </form>
+                  </div>
+                </div>
+                <button class="openBtn" onclick="openSearch()"><i class="fa fa-search" style="color: #fff;"></i></button>
+
+              </form>
+
+              </div>
+          
+            
+      </div>
+      <!-- PROGRESS BAR -->
+      <div class="progress-container">
+          <div class="progress-bar" id="myBar"></div>
+      </div>
+    </div>
+
+  <div id="personal-info" class="tabcontent">
+    <fieldset>
+      <legend style="font-size: 30px;"><b>Student Information</b></legend> 
+        <div class="box">
+            <div id="personal-info" class="form-section">
+                <p style="font-size: 17px; color: #003609c5; width: 100%; padding-top: 15px;">
+                  <i><b>PERSONAL INFORMATION</b></i>
+                </p>
+                <div class="form-group">
+                  <label class="left">FIRST NAME: </label>
+                  <div id="fname" class="editable right" contentEditable="false">Junjun</div><br>
+                </div>
+                <div class="form-group">
+                  <label class="left">MIDDLE NAME: </label>
+                  <div id="mname" class="editable right" contentEditable="false">Santos</div><br>
+                </div>
+                <div class="form-group">
+                  <label class="left">LAST NAME: </label>
+                  <div id="lname" class="editable right" contentEditable="false">Reyes</div><br>
+                </div>
+                <div class="form-group">
+                  <label class="left">MAIDEN NAME: (If married) </label>
+                  <div id="maidenName" class="editable right" contentEditable="false">N/A</div><br>
+                </div>
+                <div class="form-group">
+                  <label class="left">DATE OF BIRTH: </label>
+                  <div id="datebirth" class="editable right" contentEditable="false">01/01/1990</div><br>
+                </div>
+                <div class="form-group">
+                  <label class="left">PLACE OF BIRTH: </label>
+                  <div id="placebirth" class="editable right" contentEditable="false">City, Country</div><br>
+                </div>
+                <div class="form-group"> 
+                  <label class="left">CITIZENSHIP: </label>
+                  <div id="citizen" class="editable right" contentEditable="false">Country</div><br>
+                </div>  
+                <div class="form-group">
+                  <label>SEX AT BIRTH:</label>
+                  <div id="sex" class="editable right" contentEditable="false">
+                    Male
+                  </div><br>
+                </div>
+                <div class="form-group"> 
+                  <label class="left">ETHNICITY: </label>
+                  <div id="ethnicity" class="editable right" contentEditable="false">Ethnicity</div><br>
+                </div> 
+                <div class="form-group">  
+                  <label class="left">SPECIAL NEED/S: </label>
+                  <div id="need" class="editable right" contentEditable="false">None</div>
+                </div>
+            </div><br><hr><br>
+      
+            <!-- Previous School Information Section -->
+            <div id="previous-school-info">
+                <p style="font-size: 17px; color: #003609c5; width: 100%; padding-top: 15px;">
+                  <i><b>PREVIOUS SCHOOL INFORMATION</b></i>
+                </p>
+                <div class="form-group">
+                  <label class="left">STUDENT ID NUMBER:</label>
+                  <div id="idnum" class="editable right" contentEditable="false">1234567</div><br>
+                </div>
+                <div class="form-group">
+                  <label class="left">LRN:</label>
+                  <div id="lrn" class="editable right" contentEditable="false">123456789</div><br>
+                </div>
+                <div class="form-group">
+                  <label class="left">ACADEMIC CLASSIFICATION:</label>
+                  <div id="acadclass" class="editable right" contentEditable="false">SHS graduate</div><br>
+                </div>
+                <div class="form-group">
+                  <label class="left">LAST SCHOOL ATTENDED:</label>
+                  <div id="lastsch" class="editable right" contentEditable="false">School Name</div><br>
+                </div>
+                <div class="form-group">
+                  <label class="left">ADDRESS OF LAST SCHOOL ATTENDED:</label>
+                  <div id="addlastsch" class="editable right" contentEditable="false">School Address</div>
+                </div>    
+            </div><br><hr><br>
+      
+            <!-- Contact Information Section -->
+            <div id="contact-info">
+                <p style="font-size: 17px; color: #003609c5; padding-top: 15px;">
+                  <i><b>CONTACT INFORMATION</b></i>
+                </p>
+                <div class="form-group">
+                  <label class="left">CONTACT NUMBER:</label>
+                  <div id="connum" class="editable right" contentEditable="false">1234567890</div><br>
+                </div>
+                <div class="form-group">
+                  <label class="left">EMAIL ADDRESS:</label>
+                  <div id="email" class="editable right" contentEditable="false">email@example.com</div><br>
+                </div>
+                <div class="form-group">
+                  <label class="left">PERMANENT ADDRESS:</label>
+                  <div id="peradd" class="editable right" contentEditable="false">Permanent Address</div><br>
+                </div>
+                <div class="form-group">
+                  <label class="left">ADDRESS WHILE STUDYING AT BSU:</label>
+                  <div id="tempadd" class="editable right" contentEditable="false">Temporary Address</div><br><hr><br>
+                </div>
+            </div>
+      
+            <!-- Emergency Information Section -->
+            <div id="emergency-info">
+                <p style="font-size: 17px; color: #003609c5; width: 100%; padding-top: 15px;">
+                  <i><b>PERSON TO BE CONTACTED IN CASE OF EMERGENCY</b></i>
+                </p>
+                <div class="form-group"> 
+                  <label class="left">COMPLETE NAME: </label>
+                  <div id="emname" class="editable right" contentEditable="false">Emergency Contact Name</div><br>
+                </div>
+                <div class="form-group">
+                  <label class="left">CONTACT NUMBER: </label>
+                  <div id="con_num" class="editable right" contentEditable="false">0987654321</div><br>
+                </div> 
+                <div class="form-group"> 
+                  <label class="left">ADDRESS: </label>
+                  <div id="emadd" class="editable right" contentEditable="false">Emergency Address</div><br>
+                </div> 
+                <div class="form-group">
+                  <label class="left">RELATIONSHIP: </label>
+                  <div id="rel" class="editable right" contentEditable="false">Relation</div><br><hr><br> 
+                </div>
+                <button type="button" class="edit-button" onclick="toggleEdit()">Edit</button>
+                <button type="button" class="register-button" disabled>Register for the Next Semester</button>
+            </div> 
+        </div>
+    </fieldset><br><br>
+    <section id="support">
+      <br><h2>Support</h2>
+      <p style="color: #fff;"><b>If you need help, please contact our support team:</b></p>
+      <a href="mailto:support@example.com">Email Support</a><br>
+      <a href="tel:+1234567890">Call Support</a>
+    </section>
+  </div>
+
+
+
+
+
+
+
+
+  <div id="Sched" class="tabcontent">
+    <main class="main-content">
+      <fieldset>
+      <legend style="font-size: 30px;"><b>Selected Subjects: </b></legend>
+      <table id="selected-subjects-table">
+          <thead>
+              <tr>
+                  <th>Code</th>
+                  <th>Subject</th>
+                  <th>Description</th>
+                  <th>Units</th>
+                  <th>Instructor</th>
+                  <th>Schedule</th>
+                  <th>Room</th>
+              </tr>
+          </thead>
+          <tbody>
+              <!-- Selected subjects will be inserted here -->
+          </tbody>
+      </table>
+      </fieldset><br><br>
+    </main>
+  </div>
+
+
+
+
+
+
+
+
+
+  <div id="AoF" class="tabcontent">
+    <div class="container">
+      <main class="main-content">
+              <div class="list">
+                  <table>
+                      <h2 style="color: #000;">ASSESSMENT OF FEES</h2><hr>
+                      <h3 style="font-size: 17px;" class="h3"><i>TUITION FEES</i></h3>
+                      <tr>
+                          <td>Tuition Fees - Total Units for Gen Ed Courses: <span id="total-minor-units">0</span> x 100/unit</td>
+                          <td id="minor-fees-display">0.00</td>
+                      </tr>
+                      <tr>
+                          <td>Tuition Fees - Total Units for Prof Ed Courses: <span id="total-major-units">0</span> x 150/unit</td>
+                          <td id="major-fees-display">0.00</td>
+                      </tr>
+                      <tr>
+                          <td class=".p">Total Tuition Fees</td>
+                          <td class=".p" id="total-fees-display">0.00</td>
+                      </tr>
+                  </table><hr>
+                  <table>
+                      <h3 style="font-size: 17px;" class="h3"><i>LABORATORY FEES</i></h3>
+                      <tr>
+                          <td>Laboratory Fee (with Equipment) <span id="lab-subject-count-display">0</span> x 150/SUBJECT</td>
+                          <td id="total-lab-fee-display">0.00</td>
+                      </tr>
+                  </table><hr>
+                  <table>
+                      <h3 style="font-size: 17px;" class="h3"><i>MISCELLANEOUS FEES</i></h3>
+                      <tr>
+                          <td>NSTP Fee/ROTC:<span id="nstp-count-display">0</span> x 150/subject</td>
+                          <td id="nstp-fee-display">0.00</td>
+                      </tr>
+                      <tr>
+                          <td>PE Fees:<span id="pathfit-count-display">0</span> x 200/subject</td>
+                          <td id="pathfit-fee-display">0.00</td>
+                      </tr>
+                      <tr>
+                          <td>Entrance Fee</td>
+                          <td>100.00</td>
+                      </tr>
+                      <tr>
+                          <td>ID Card Fee</td>
+                          <td>186.00</td>
+                      </tr>
+                      <tr>
+                          <td>Sports, Culture & Arts Fee</td>
+                          <td>110.00</td>
+                      </tr>
+                      <tr>
+                          <td>ICT Fee</td>
+                          <td>150.00</td>
+                      </tr>
+                      <tr>
+                          <td>Athletic Fee</td>
+                          <td>100.00</td>
+                      </tr>
+                      <tr>
+                          <td>Insurance Fee</td>
+                          <td>50.00</td>
+                      </tr>
+                      <tr>
+                          <td>Library Fees</td>
+                          <td>50.00</td>
+                      </tr>
+                      <tr>
+                          <td>Medical-Dental Fee</td>
+                          <td>50.00</td>
+                      </tr>
+                      <tr>
+                          <td>Registration Fee</td>
+                          <td>50.00</td>
+                      </tr>
+                  </table><hr>
+                  <p class="p">TOTAL ASSESSMENT: <span id="total-assessment-display">4,571.00</span></p><br>
+              </div>
+              <div class="list">
+                  <table>
+                      <h3 style="font-size: 17px; text-decoration: italic;" class="h3"><i>SCHOLARSHIP - Universal Access to Quality</i></h3>
+                      <tr>
+                          <td>Tuition Fees - Gen Ed Courses</td>
+                          <td id="minor-fees-scholarship">0.00</td>
+                      </tr>
+                      <tr>
+                          <td>Tuition Fees - Prof Ed Courses</td>
+                          <td id="major-fees-scholarship">0.00</td>
+                      </tr>
+                      <tr>
+                          <td>Laboratory Fee (with Equipment)</td>
+                          <td id="total-fees-scholarship">0.00</td>
+                      </tr>
+                      <tr>
+                          <td>NSTP Fee/ROTC:<span id="nstp-count-scholarship">0</span> x 150/subject</td>
+                          <td id="nstp-fee-scholarship">0.00</td>
+                      </tr>
+                      <tr>
+                          <td>PE Fees:<span id="pathfit-count-scholarship">0</span> x 200/subject</td>
+                          <td id="pathfit-fee-scholarship">0.00</td>
+                      </tr>
+                      <tr>
+                          <td>Entrance Fee</td>
+                          <td>100.00</td>
+                      </tr>
+                      <tr>
+                          <td>ID Card Fee</td>
+                          <td>186.00</td>
+                      </tr>
+                      <tr>
+                          <td>Sports, Culture & Arts Fee</td>
+                          <td>110.00</td>
+                      </tr>
+                      <tr>
+                          <td>ICT Fee</td>
+                          <td>150.00</td>
+                      </tr>
+                      <tr>
+                          <td>Athletic Fee</td>
+                          <td>100.00</td>
+                      </tr>
+                      <tr>
+                          <td>Insurance Fee</td>
+                          <td>50.00</td>
+                      </tr>
+                      <tr>
+                          <td>Library Fees</td>
+                          <td>50.00</td>
+                      </tr>
+                      <tr>
+                          <td>Medical-Dental Fee</td>
+                          <td>50.00</td>
+                      </tr>
+                      <tr>
+                          <td>Registration Fee</td>
+                          <td>50.00</td>
+                      </tr>
+                  </table><hr>
+                  <p class="p">DISCOUNTED ASSESSMENT: <span id="discounted-assessment">0.00</span></p><br>
+              </div>
+      </main>
+      <section id="support">
+        <br><h2>Support</h2>
+        <p style="color: #fff;"><b>If you need help, please contact our support team:</b></p>
+        <a href="mailto:support@example.com">Email Support</a><br>
+        <a href="tel:+1234567890">Call Support</a>
+      </section>
+    </div>
+  </div>
+
+
+
+
+
+
+
+  <div id="Account" class="tabcontent">
+    <main>
+      <fieldset id="profile" class="acc">
+          <legend><h2>Profile Information</h2></legend>
+          <form  action="/update-profile" method="POST">
+              <label for="full-name" class="left">Full Name:</label> 
+              <input type="text" id="full-name" name="full-name" class="right" required> <br><br>
+
+              <label for="email" class="left">Email Address:</label> 
+              <input type="email" id="email" name="email" class="right" required> <br><br>
+
+              <label for="phone" class="left">Phone Number:</label> 
+              <input type="tel" id="phone" name="phone" class="right" required pattern="\d{10,}" minlength="10" title="Please enter at least 10 digits."> <br><br>
+
+              <label for="address" class="left">Address:</label> 
+              <input type="text" id="address" name="address" rows="2" class="right"> <br>
+
+              <button type="submit">Save Profile</button>
+          </form>
+      </fieldset>
+
+      <fieldset id="security" class="acc">
+          <legend><h2>Account Security</h2></legend>
+          <form action="/change-password" method="POST">
+              <label for="current-password" class="left">Current Password:</label>
+              <input type="password" id="current-password" name="current-password" class="right" required> <br><br>
+
+              <label for="new-password" class="left">New Password:</label>
+              <input type="password" id="new-password" name="new-password" class="right" required> <br><br>
+
+              <label for="confirm-password" class="left">Confirm New Password:</label>
+              <input type="password" id="confirm-password" name="confirm-password" class="right" required> <br><br>
+
+              <button type="submit">Change Password</button>
+          </form>
+      </fieldset>
+      
+    </main>
+    <section id="support">
+      <br><h2>Support</h2>
+      <p style="color: #fff;"><b>If you need help, please contact our support team:</b></p>
+      <a href="mailto:support@example.com">Email Support</a><br>
+      <a href="tel:+1234567890">Call Support</a>
+    </section>
+    
+  </div>
+
+  <script src="home.js"></script>
+</body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Register form</title>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+  <form action="/action_page.php">
+    <label class="switch">
+      <input type="checkbox" id="darkmode-checkbox">
+      <span class="slider round"></span>
+    </label>
+  </form>
+
+    <div class="header" id="header">
+      <img src="bsu_logo.png" alt="BSU Logo">
+      <h2><b style="font-size: 40px;">Benguet State University</b><br>
+          Online Enrollment Portal</h2>
+    </div>
+
+    <div class="enrollmentportal" id="enrollmentportal">
+      <fieldset id="login-fieldset">
+        <legend style="padding: 2%; font-size: 15px;"><b>Log In:</b></legend>
+        <b style="font-size: 25px; font-weight: bold;">Select User:</b><br>
+        <input type="button" value="Faculty Staff" class="button" onclick="toggleContent('login')"/>
+        <input type="button" value="Continuing Student" class="button" onclick="toggleContent('login')"/>
+      </fieldset>
+      
+      <fieldset id="register-fieldset">
+        <legend style="padding: 2%;font-size: 15px;"><b>Register:</b></legend>
+        <input type="button" value="Apply as a New Student" class="button" onclick="toggleContent('register')"/>
+      </fieldset>
+    </div>
+
+    <div class="wrapper hidden">
+      <span class="rotate-bg"></span>
+      <span class="rotate-bg2"></span>
+
+      <!-- Login Form -->
+      <div class="form-box login">
+        <h2 class="title animation" style="--i:0; --j:21;">Login</h2>
+        <form action="REGISTRATION FORM/HOMEPAGE/home.html">
+          <div class="input-box animation" style="--i:1; --j:22">
+            <input type="text" required>
+            <label for="">Username</label>
+            <i class='bx bxs-user'></i>
+          </div>
+
+          <div class="input-box animation" style="--i:2; --j:23">
+            <input type="password" required>
+            <label for="">Password</label>
+            <i class='bx bxs-lock-alt'></i>
+          </div>
+          
+          <button type="submit" class="btn animation" style="--i:3; --j:24">Login</button>
+
+          <div class="linkTxt animation" style="--i:5; --j:25">
+            <p>Don't have an account? <a href="#" class="register-link">Sign Up</a></p>
+          </div>
+        </form>
+      </div>
+
+      <!-- Info for Login -->
+      <div class="info-text login">
+        <img src="bsu_logo.png" style="--i:1; --j:21; width: auto; height: auto;" class="animation" >
+        <h2 class="animation" style="--i:0; --j:20">Welcome!</h2>
+        <p class="animation" style="--i:1; --j:21">Please Log-in to continue...</p>
+      </div>
+
+      <!-- Registration Form -->
+      <div class="form-box register">
+        <h2 class="title animation" style="--i:17; --j:0">Sign Up</h2>
+        <form action="REGISTRATION FORM\RegistrationForm.html">
+          <div class="input-box animation" style="--i:18; --j:1">
+            <input type="text" required>
+            <label for="">Username</label>
+            <i class='bx bxs-user'></i>
+          </div>
+
+          <div class="input-box animation" style="--i:19; --j:2">
+            <input type="email" required>
+            <label for="">Email</label>
+            <i class='bx bxs-envelope'></i>
+          </div>
+
+          <div class="input-box animation" style="--i:20; --j:3">
+            <input type="password" required>
+            <label for="">Password</label>
+            <i class='bx bxs-lock-alt'></i>
+          </div>
+
+          <button type="submit" class="btn animation" style="--i:21;--j:4">Sign Up</button>
+          
+          <div class="linkTxt animation" style="--i:22; --j:5">
+            <p>Already have an account? <a href="#" class="login-link">Login</a></p>
+          </div>
+        </form>
+      </div>
+
+      <!-- Info for Register -->
+      <div class="info-text register">
+        <img src="bsu_logo.png" style="--i:18; --j:1; width: auto; height: auto;" class="animation" >
+        <h2 class="animation" style="--i:17; --j:0;">Welcome!</h2>
+        <p class="animation" style="--i:18; --j:1;">Please Register or Sign up to continue...</p>
+      </div>
+    </div>
+
+    
+
+  <script>
+    // DARK MODE
+  const darkmodeCheckbox = document.getElementById('darkmode-checkbox');
+
+  darkmodeCheckbox.addEventListener('click', () => {
+      document.body.classList.toggle('darkmode');
+  });
+
+
+
+    const header = document.getElementById('header');
+    const enrollmentPortal = document.getElementById('enrollmentportal');
+    const wrapper = document.querySelector('.wrapper');
+    const registerLink = document.querySelector('.register-link');
+    const loginLink = document.querySelector('.login-link');
+
+    function toggleContent(view) {
+      if (view === 'login') {
+        header.classList.add('hidden'); // Hide the header
+        enrollmentPortal.classList.add('hidden');
+        wrapper.classList.remove('hidden');
+        wrapper.classList.remove('active');
+      } else if (view === 'register') {
+        header.classList.add('hidden'); // Hide the header
+        enrollmentPortal.classList.add('hidden');
+        wrapper.classList.remove('hidden');
+        wrapper.classList.add('active');
+      }
+    }
+
+    registerLink.addEventListener('click', () => {
+      wrapper.classList.add('active');
+    });
+
+    loginLink.addEventListener('click', () => {
+      wrapper.classList.remove('active');
+    });
+
+    function handleFormSubmit(event) {
+      event.preventDefault();
+      window.location.href = "homepage.html";
+    }
+  </script>
+</body>
+</html>

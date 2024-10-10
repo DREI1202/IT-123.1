@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Subject Selection</title>
+        <link rel="stylesheet" href="sub2.css">
+      </head>
+    <body> 
+
+        <div class="sidebar">
+            <h2 style="color: #04AA6D">Enrollment Steps</h2>
+            <ol>
+              <li id="select-college-step" class="bg-selected">Select your College</li>
+              <li id="select-degree-step" class="bg-selected">Select your Program/Degree</li>
+              <li id="registration-form-step" class="bg-selected">Fill in the Registration Form </li>
+                  <ul>
+                      <li id="personal-info-step" class="bg-selected">Personal Information</li>
+                      <li id="previous-school-step" class="bg-selected">Previous School Information</li>
+                      <li id="contact-info-step" class="bg-selected">Contact Information</li>
+                      <li id="emergency-contact-step" class="bg-selected">Person To Be Contacted In Case Of Emergency</li>
+                  </ul>
+              </li>
+              <li id="review-schedule-step">Review/Change School Schedule</li>
+              <li id="review-fee-step">Review/Change Assessment Fee</li>
+            </ol>
+        </div>
+
+
+            <div class="main">
+                <div class="container-form">
+                <main class="main-content">   
+                <form action="fees.html" method="post" id="subjectForm">
+                <legend><h3>Available Subjects for </h3></legend>
+                <select name="CSY" id="CSY" class="box">
+                    <option disabled selected> -- Select Course, Section, Year-- </option>
+                    <option value="1A">BSIT 1A</option>
+                    <option disabled>BSIT 1B</option>
+                    <option disabled>BSIT 2A</option>
+                    <option disabled>BSIT 2B</option>
+                    <option disabled>BSIT 3A</option>
+                    <option disabled>BSIT 3B</option>
+                    <option disabled>BSIT 4A</option>
+                    <option disabled>BSIT 4B</option>
+                </select>
+                
+            <div id="subjects" class="hidden">
+            <h3>Major Subjects</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Select</th>
+                            <th>Code</th>
+                            <th>Subject</th>
+                            <th>Description</th>
+                            <th>Units</th>
+                            <th>Instructor</th>
+                            <th>Schedule</th>
+                            <th>Room</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><input type="checkbox" id="subject1" data-code="041" data-subject="IT 111" data-description="Introduction to Computing (Lecture)" data-units="2" data-instructor="C. Paza" data-schedule="2-3 pm MWF" data-room="CIS204"></td>
+                            <td>041</td>
+                            <td>IT 111</td>
+                            <td>Introduction to Computing (Lecture)</td>
+                            <td>2</td>
+                            <td>C. Paza</td>
+                            <td>2-3 pm MWF</td>
+                            <td>CIS204</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" id="subject2" data-code="044" data-subject="IT 111.1" data-description="Introduction to Computing (Laboratory)" data-units="1" data-instructor="C. Paza" data-schedule="3-4 pm MWF" data-room="CIS204"></td>
+                            <td>044</td>
+                            <td>IT 111.1</td>
+                            <td>Introduction to Computing (Laboratory)</td>
+                            <td>1</td>
+                            <td>C. Paza</td>
+                            <td>3-4 pm MWF</td>
+                            <td>CIS204</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" id="subject3" data-code="040" data-subject="IT 112" data-description="Discrete Mathematics" data-units="3" data-instructor="K. Martin" data-schedule="8-9 am MWF" data-room="CIS205"></td>
+                            <td>040</td>
+                            <td>IT 112</td>
+                            <td>Discrete Mathematics</td>
+                            <td>3</td>
+                            <td>K. Martin</td>
+                            <td>8-9 am MWF</td>
+                            <td>CIS205</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" id="subject4" data-code="050" data-subject="IT 113" data-description="Computer Programming 1 (Lecture)" data-units="2" data-instructor="F. Orencia" data-schedule="1-2 pm MW" data-room="CIS205"></td>
+                            <td>050</td>
+                            <td>IT 113</td>
+                            <td>Computer Programming 1 (Lecture)</td>
+                            <td>2</td>
+                            <td>F. Orencia</td>
+                            <td>1-2 pm MW</td>
+                            <td>CIS205</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" id="subject5" data-code="047" data-subject="IT 113" data-description="Computer Programming 1 (Laboratory)" data-units="1" data-instructor="F. Orencia" data-schedule="10:30 am-12 pm MW" data-room="CIS205"></td>
+                            <td>047</td>
+                            <td>IT 113</td>
+                            <td>Computer Programming 1 (Laboratory)</td>
+                            <td>1</td>
+                            <td>F. Orencia</td>
+                            <td>10:30 am-12 pm MW</td>
+                            <td>CIS205</td>
+                        </tr>
+                    </tbody>
+                </table>
+            
+                <h3>Minor Subjects</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Select</th>
+                            <th>Code</th>
+                            <th>Subject</th>
+                            <th>Description</th>
+                            <th>Units</th>
+                            <th>Instructor</th>
+                            <th>Schedule</th>
+                            <th>Room</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><input type="checkbox" id="subject6" data-code="041" data-subject="ENG 21" data-description="Purposive Communication" data-units="3" data-instructor="R. Giye" data-schedule="9-10 am MWF" data-room="AE311"></td>
+                            <td>041</td>
+                            <td>ENG 21</td>
+                            <td>Purposive Communication</td>
+                            <td>3</td>
+                            <td>R. Giye</td>
+                            <td>9-10 am MWF</td>
+                            <td>AE311</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" id="subject7" data-code="045" data-subject="SSP 24" data-description="The Entrepreneurial Mind" data-units="3" data-instructor="B. Sa-ao" data-schedule="5-6 pm MWF" data-room="CASAN107"></td>
+                            <td>045</td>
+                            <td>SSP 24</td>
+                            <td>The Entrepreneurial Mind</td>
+                            <td>3</td>
+                            <td>B. Sa-ao</td>
+                            <td>5-6 pm MWF</td>
+                            <td>CASAN107</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" id="subject8" data-code="042" data-subject="MATH 21" data-description="Mathematics in the Modern World" data-units="3" data-instructor="F. Ngiwas" data-schedule="10-11 am MWF" data-room="TBA"></td>
+                            <td>042</td>
+                            <td>MATH 21</td>
+                            <td>Mathematics in the Modern World</td>
+                            <td>3</td>
+                            <td>F. Ngiwas</td>
+                            <td>10-11 am MWF</td>
+                            <td>TBA</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" id="subject9" data-code="051" data-subject="STS 21" data-description="Science, Technology and Society" data-units="1" data-instructor="B. Anno" data-schedule="7:30-9 am TTh" data-room="TBA"></td>
+                            <td>051</td>
+                            <td>STS 21</td>
+                            <td>Science, Technology and Society</td>
+                            <td>1</td>
+                            <td>B. Anno</td>
+                            <td>7:30-9 am TTh</td>
+                            <td>TBA</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" id="subject10" data-code="048" data-subject="NSTP 1" data-description="National Service Training Program 1" data-units="3" data-instructor="Saturnino M." data-schedule="1-2:30 pm TTh" data-room="AE311"></td>
+                            <td>048</td>
+                            <td>NSTP 1</td>
+                            <td>National Service Training Program 1</td>
+                            <td>3</td>
+                            <td>Saturnino M.</td>
+                            <td>1-2:30 pm TTh</td>
+                            <td>AE311</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" id="subject11" data-code="049" data-subject="PATHFIT 1" data-description="Movement Competency Training" data-units="2" data-instructor="L. Logdo" data-schedule="3-5 pm Th" data-room="GYM"></td>
+                            <td>049</td>
+                            <td>PATHFIT 1</td>
+                            <td>Movement Competency Training</td>
+                            <td>2</td>
+                            <td>L. Logdo</td>
+                            <td>3-5 pm Th</td>
+                            <td>GYM</td>
+                        </tr>
+                    </tbody>
+                </table>
+            
+                <div class="selected-subjects">
+                    <h2>Selected Subjects</h2>
+                        <table id="selected-subjects-table">
+                            <thead>
+                                <tr>
+                                    <th>Code</th>
+                                    <th>Subject</th>
+                                    <th>Description</th>
+                                    <th>Units</th>
+                                    <th>Instructor</th>
+                                    <th>Schedule</th>
+                                    <th>Room</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            
+                            </tbody>
+                            <h3>Total Units</h3>
+                            <p>Prof Ed Courses: <span id="total-major-units">0</span></p>
+                            <p>Gen Ed Cources: <span id="total-minor-units">0</span></p>
+                            <p>PATHFIT Count: <span id="pathfit-count">0</span></p>
+                            <p>NSTP Count: <span id="nstp-count">0</span></p>
+                            <p>Laboratory Subject Count: <span id="lab-subject-count">0</span></p>
+                            
+                        </form>
+                            
+                        </table>
+                  <button type="submit">Next</button>       
+                </div>
+        </div>
+    </main>
+           
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    const subjectsDiv = document.getElementById('subjects');
+    const courseSelect = document.getElementById('CSY');
+    const totalMajorUnits = document.getElementById('total-major-units');
+    const totalMinorUnits = document.getElementById('total-minor-units');
+    const pathfitCountDisplay = document.getElementById('pathfit-count');
+    const nstpCountDisplay = document.getElementById('nstp-count');
+    const labSubjectCountDisplay = document.getElementById('lab-subject-count');
+
+    courseSelect.addEventListener('change', function() {
+        if (this.value) {
+            subjectsDiv.classList.remove('hidden');
+        } else {
+            subjectsDiv.classList.add('hidden');
+        }
+    });
+
+
+    const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+    const selectedSubjectsTable = document.querySelector('#selected-subjects-table tbody');
+
+    function updateTable() {
+        let majorUnits = 0;
+        let minorUnits = 0;
+        let pathfitCount = 0;
+        let nstpCount = 0;
+        let labSubjectCount = 0;
+
+        const selectedSubjects = Array.from(checkboxes)
+            .filter(cb => cb.checked)
+            .map(cb => {
+                const units = parseInt(cb.getAttribute('data-units'), 10);
+                const description = cb.getAttribute('data-description');
+                const isMajor = cb.closest('table').previousElementSibling.textContent.includes('Major Subjects');
+                if (isMajor) {
+                    majorUnits += units;
+                } else {
+                    minorUnits += units;
+                }
+
+                if (cb.getAttribute('data-subject') === 'PATHFIT 1') {
+                    pathfitCount++;
+                } else if (cb.getAttribute('data-subject') === 'NSTP 1') {
+                    nstpCount++;
+                }
+
+                if (description.includes('Laboratory')) {
+                    labSubjectCount++;
+                }
+
+                return {
+                    code: cb.getAttribute('data-code'),
+                    subject: cb.getAttribute('data-subject'),
+                    description,
+                    units,
+                    instructor: cb.getAttribute('data-instructor'),
+                    schedule: cb.getAttribute('data-schedule'),
+                    room: cb.getAttribute('data-room')
+                };
+            });
+
+        selectedSubjectsTable.innerHTML = selectedSubjects.length
+            ? selectedSubjects.map(subject => `<tr>
+                <td>${subject.code}</td>
+                <td>${subject.subject}</td>
+                <td>${subject.description}</td>
+                <td>${subject.units}</td>
+                <td>${subject.instructor}</td>
+                <td>${subject.schedule}</td>
+                <td>${subject.room}</td>
+            </tr>`).join('')
+            : '<tr><td colspan="7">No subjects selected.</td></tr>';
+
+        totalMajorUnits.textContent = majorUnits;
+        totalMinorUnits.textContent = minorUnits;
+        pathfitCountDisplay.textContent = pathfitCount;
+        nstpCountDisplay.textContent = nstpCount;
+        labSubjectCountDisplay.textContent = labSubjectCount;
+
+        localStorage.setItem('selectedSubjects', JSON.stringify(selectedSubjects));
+        localStorage.setItem('majorUnits', majorUnits);
+        localStorage.setItem('minorUnits', minorUnits);
+        localStorage.setItem('pathfitCount', pathfitCount);
+        localStorage.setItem('nstpCount', nstpCount);
+        localStorage.setItem('labSubjectCount', labSubjectCount);
+    }
+
+    function debounce(func, wait) {
+        let timeout;
+        return function(...args) {
+            clearTimeout(timeout);
+            timeout = setTimeout(() => func.apply(this, args), wait);
+        };
+    }
+
+    checkboxes.forEach(checkbox => checkbox.addEventListener('change', debounce(updateTable, 300)));
+
+    updateTable();
+});
+</script>
+ 
+</body>
+</html>
+
+  

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Assessment of Fees</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+
+    <div class="sidebar">
+        <h2 style="color: #04AA6D">Enrollment Steps</h2>
+        <ol>
+          <li id="select-college-step" class="bg-selected">Select your College</li>
+          <li id="select-degree-step" class="bg-selected">Select your Program/Degree</li>
+          <li id="registration-form-step" class="bg-selected">Fill in the Registration Form </li>
+              <ul>
+                  <li id="personal-info-step" class="bg-selected">Personal Information</li>
+                  <li id="previous-school-step" class="bg-selected">Previous School Information</li>
+                  <li id="contact-info-step" class="bg-selected">Contact Information</li>
+                  <li id="emergency-contact-step" class="bg-selected">Person To Be Contacted In Case Of Emergency</li>
+              </ul>
+          </li>
+          <li id="review-schedule-step" class="bg-selected">Review/Change School Schedule</li>
+          <li id="review-fee-step">Review/Change Assessment Fee</li>
+        </ol>
+    </div>
+
+    <div class="main">
+        <div class="container-form">
+                <main class="main-content">   
+                <div class="list">
+                    <table>
+                        <h2 style="color: #000;">ASSESSMENT OF FEES</h2><hr>
+                        <h3>TUITION FEES</h3>
+                        <tr>
+                            <td>Tuition Fees - Total Units for Gen Ed Courses: <span id="total-minor-units">0</span> x 100/unit</td>
+                            <td id="minor-fees-display">0.00</td>
+                        </tr>
+                        <tr>
+                            <td>Tuition Fees - Total Units for Prof Ed Courses: <span id="total-major-units">0</span> x 150/unit</td>
+                            <td id="major-fees-display">0.00</td>
+                        </tr>
+                        <tr>
+                            <td>Total Tuition Fees</td>
+                            <td id="total-fees-display">0.00</td>
+                        </tr>
+                    </table><hr>
+                    <table>
+                        <h3>LABORATORY FEES</h3>
+                        <tr>
+                            <td>Laboratory Fee (with Equipment) <span id="lab-subject-count-display">0</span> x 150/SUBJECT</td>
+                            <td id="total-lab-fee-display">0.00</td>
+                        </tr>
+                    </table><hr>
+                    <table>
+                        <h3>MISCELLANEOUS FEES</h3>
+                        <tr>
+                            <td>NSTP Fee/ROTC:<span id="nstp-count-display">0</span> x 150/subject</td>
+                            <td id="nstp-fee-display">0.00</td>
+                        </tr>
+                        <tr>
+                            <td>PE Fees:<span id="pathfit-count-display">0</span> x 200/subject</td>
+                            <td id="pathfit-fee-display">0.00</td>
+                        </tr>
+                        <tr>
+                            <td>Entrance Fee</td>
+                            <td>100.00</td>
+                        </tr>
+                        <tr>
+                            <td>ID Card Fee</td>
+                            <td>186.00</td>
+                        </tr>
+                        <tr>
+                            <td>Sports, Culture & Arts Fee</td>
+                            <td>110.00</td>
+                        </tr>
+                        <tr>
+                            <td>ICT Fee</td>
+                            <td>150.00</td>
+                        </tr>
+                        <tr>
+                            <td>Athletic Fee</td>
+                            <td>100.00</td>
+                        </tr>
+                        <tr>
+                            <td>Insurance Fee</td>
+                            <td>50.00</td>
+                        </tr>
+                        <tr>
+                            <td>Library Fees</td>
+                            <td>50.00</td>
+                        </tr>
+                        <tr>
+                            <td>Medical-Dental Fee</td>
+                            <td>50.00</td>
+                        </tr>
+                        <tr>
+                            <td>Registration Fee</td>
+                            <td>50.00</td>
+                        </tr>
+                    </table><hr>
+                    <p>TOTAL ASSESSMENT: <span id="total-assessment-display">4,571.00</span></p><br>
+                </div>
+                <div class="list">
+                    <table>
+                        <h3>SCHOLARSHIP - Universal Access to Quality</h3>
+                        <tr>
+                            <td>Tuition Fees - Gen Ed Courses</td>
+                            <td id="minor-fees-scholarship">0.00</td>
+                        </tr>
+                        <tr>
+                            <td>Tuition Fees - Prof Ed Courses</td>
+                            <td id="major-fees-scholarship">0.00</td>
+                        </tr>
+                        <tr>
+                            <td>Laboratory Fee (with Equipment)</td>
+                            <td id="total-fees-scholarship">0.00</td>
+                        </tr>
+                        <tr>
+                            <td>NSTP Fee/ROTC:<span id="nstp-count-scholarship">0</span> x 150/subject</td>
+                            <td id="nstp-fee-scholarship">0.00</td>
+                        </tr>
+                        <tr>
+                            <td>PE Fees:<span id="pathfit-count-scholarship">0</span> x 200/subject</td>
+                            <td id="pathfit-fee-scholarship">0.00</td>
+                        </tr>
+                        <tr>
+                            <td>Entrance Fee</td>
+                            <td>100.00</td>
+                        </tr>
+                        <tr>
+                            <td>ID Card Fee</td>
+                            <td>186.00</td>
+                        </tr>
+                        <tr>
+                            <td>Sports, Culture & Arts Fee</td>
+                            <td>110.00</td>
+                        </tr>
+                        <tr>
+                            <td>ICT Fee</td>
+                            <td>150.00</td>
+                        </tr>
+                        <tr>
+                            <td>Athletic Fee</td>
+                            <td>100.00</td>
+                        </tr>
+                        <tr>
+                            <td>Insurance Fee</td>
+                            <td>50.00</td>
+                        </tr>
+                        <tr>
+                            <td>Library Fees</td>
+                            <td>50.00</td>
+                        </tr>
+                        <tr>
+                            <td>Medical-Dental Fee</td>
+                            <td>50.00</td>
+                        </tr>
+                        <tr>
+                            <td>Registration Fee</td>
+                            <td>50.00</td>
+                        </tr>
+                    </table><hr>
+                    <p>DISCOUNTED ASSESSMENT: <span id="discounted-assessment">0.00</span></p><br>
+                </div>
+                <button type="submit" onclick="nextPage()">Register</button>
+            </div>
+        </main>
+
+        <script>
+                        document.addEventListener('DOMContentLoaded', () => {
+                // Retrieve and parse values from localStorage
+                const majorUnits = parseInt(localStorage.getItem('majorUnits') || '0', 10);
+                const minorUnits = parseInt(localStorage.getItem('minorUnits') || '0', 10);
+                const labSubjectCount = parseInt(localStorage.getItem('labSubjectCount') || '0', 10);
+                const pathfitCount = parseInt(localStorage.getItem('pathfitCount') || '0', 10);
+                const nstpCount = parseInt(localStorage.getItem('nstpCount') || '0', 10);
+                
+                console.log("Major Units:", majorUnits);
+                console.log("Minor Units:", minorUnits);
+                console.log("Lab Subject Count:", labSubjectCount);
+                console.log("Pathfit Count:", pathfitCount);
+                console.log("NSTP Count:", nstpCount);
+
+                // Fee rates
+                const majorRate = 150;
+                const minorRate = 100;
+                const labRate = 150;
+                const pathfitRate = 200;
+                const nstpRate = 150;
+
+                // Calculate fees
+                const majorFees = majorUnits * majorRate;
+                const minorFees = minorUnits * minorRate;
+                const totalFees = majorFees + minorFees;
+                const labFees = labSubjectCount * labRate;
+                const pathfitFees = pathfitCount * pathfitRate;
+                const nstpFees = nstpCount * nstpRate;
+                const totalAssessment = totalFees + labFees + pathfitFees + nstpFees + 1421; // Adding miscellaneous fees
+
+                console.log("Major Fees:", majorFees);
+                console.log("Minor Fees:", minorFees);
+                console.log("Lab Fees:", labFees);
+                console.log("Pathfit Fees:", pathfitFees);
+                console.log("NSTP Fees:", nstpFees);
+                console.log("Total Assessment:", totalAssessment);
+
+
+                document.getElementById('total-major-units').textContent = majorUnits;
+                document.getElementById('total-minor-units').textContent = minorUnits;
+                document.getElementById('major-fees-display').textContent = majorFees.toFixed(2);
+                document.getElementById('minor-fees-display').textContent = minorFees.toFixed(2);
+                document.getElementById('total-fees-display').textContent = totalFees.toFixed(2);
+                document.getElementById('lab-subject-count-display').textContent = labSubjectCount;
+                document.getElementById('total-lab-fee-display').textContent = labFees.toFixed(2);
+                document.getElementById('pathfit-count-display').textContent = pathfitCount;
+                document.getElementById('nstp-count-display').textContent = nstpCount;
+                document.getElementById('pathfit-fee-display').textContent = pathfitFees.toFixed(2);
+                document.getElementById('nstp-fee-display').textContent = nstpFees.toFixed(2);
+                document.getElementById('total-assessment-display').textContent = totalAssessment.toFixed(2);
+
+                // For scholarship section
+                document.getElementById('minor-fees-scholarship').textContent = minorFees.toFixed(2);
+                document.getElementById('major-fees-scholarship').textContent = majorFees.toFixed(2);
+                document.getElementById('total-fees-scholarship').textContent = labFees.toFixed(2);
+                document.getElementById('pathfit-count-scholarship').textContent = pathfitCount;
+                document.getElementById('nstp-count-scholarship').textContent = nstpCount;
+                document.getElementById('pathfit-fee-scholarship').textContent = pathfitFees.toFixed(2);
+                document.getElementById('nstp-fee-scholarship').textContent = nstpFees.toFixed(2);
+                document.getElementById('discounted-assessment').textContent = totalAssessment.toFixed(2);
+            });
+
+            function nextPage() {
+                window.location.href = 'done.html';
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,262 @@
+.hidden {
+    display: none;
+}
+
+.sidebar {
+    float: left;
+    display: fixed;
+    height: 100%;
+    width: 25%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    background-color: #111;
+    padding-top: 16px;
+    padding-left: 0.5%;
+    padding-right: 0.5%;
+}
+  
+.sidebar li {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    color: #818181;
+    display: block;
+    display: inline-block; 
+    margin-right: 20px; 
+}
+  
+.sidebar a:hover {
+    color: #f1f1f1;
+}
+  
+.main {
+    float: left;
+    display: block;
+    padding: 0px 10px;
+    margin-left: 27%;
+    margin-right: 1%;
+}
+
+.col-75 input, select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.col-75 input {
+    border: none;
+    border-bottom: 2px solid #76944c;
+    width: 58%;
+}
+
+.col-75 input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+  
+.row label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+  
+.col-75 input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+  
+.col-75 input[type=submit]:hover {
+    background-color: #45a049;
+}
+  
+.container-form {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    width: 100%;
+}
+  
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+  
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+  
+    /* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+  
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .col-25, .col-75, .col-75 input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+}
+
+fieldset {
+    border: 1px solid #222;
+    width: 120%;
+    background-color: #ccc;
+}
+
+legend {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    width: 100%; 
+    color: #000;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 30px;
+    cursor: pointer;
+    text-align: center;
+}
+
+button:hover {
+    background-color: #ffdb4d;
+    color: #000;
+}
+
+.college-section {
+    margin-bottom: 30px;
+}
+
+main.main-content {
+    padding: 10px;
+}
+
+.bg-selected {
+    background-color:#1b1b1b; 
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+form {
+    display: block;
+}
+
+input:active {
+    border: none;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #04AA6D;
+    color: white;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+.popup {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.popup-content {
+    position: relative;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.popup-content img {
+    width: auto;
+    height: 400px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    color: red;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.caption {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+.button-container {
+    margin-top: 10px;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    background-color: #04AA6D;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #037D5D;
+}
